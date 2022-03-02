@@ -1,4 +1,11 @@
 def divisors(num):
+    try:
+        if num < 0:
+            raise ValueError("No se pueden ingresar numeros negativos")
+        return
+    except ValueError as cualquierValor:
+        print(cualquierValor)
+        
     divisors = []
     for i in range(1, num + 1):
         if num % i == 0:
